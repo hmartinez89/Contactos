@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mrgLLYContactos">16dp</dimen>
+    <dimen name="mrgDPContactos">16dp</dimen>
+    <dimen name="hgtILTDescripcionContacto">75dp</dimen>
+    <dimen name="mrgIzqConfirmarContactos">16dp</dimen>
+    <dimen name="mrgDerConfirmarContactos">16dp</dimen>
+    <dimen name="mrgArrConfirmarContactos">16dp</dimen>
+    <dimen name="mrgAbaConfirmarContactos">16dp</dimen>
+    <dimen name="tvTituloConfirmarContactos">24sp</dimen>
+</resources>

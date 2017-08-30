@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginStart="@dimen/mrgIzqConfirmarContactos"
+    android:layout_marginEnd="@dimen/mrgDerConfirmarContactos"
+    android:layout_marginTop="@dimen/mrgArrConfirmarContactos"
+    android:layout_marginBottom="@dimen/mrgAbaConfirmarContactos"
+    tools:context="com.hmartinez.contactos.ConfirmarContactos">
+
+    <TextView
+        android:id="@+id/tvTituloConfirmarContactos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvTituloConfirmarContactos"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/TextPrimary"
+        android:textSize="@dimen/tvTituloConfirmarContactos" />
+    <TextView
+        android:id="@+id/tvNombre_confirmarContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/mrgArrConfirmarContactos" />
+    <TextView
+        android:id="@+id/tvFechaNacimiento_confirmarContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/mrgArrConfirmarContactos" />
+    <TextView
+        android:id="@+id/tvTelefono_confirmarContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/mrgArrConfirmarContactos"/>
+    <TextView
+        android:id="@+id/tvMail_confirmarContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/mrgArrConfirmarContactos"/>
+    <TextView
+        android:id="@+id/tvDescripcion_confirmarContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/mrgArrConfirmarContactos"/>
+    <Button
+        android:id="@+id/btnEditarContactos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnEditarContacto"
+        android:textAllCaps="false"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="@dimen/mrgArrConfirmarContactos"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:paddingBottom="@dimen/mrgAbaConfirmarContactos"/>
+</android.support.v7.widget.LinearLayoutCompat>

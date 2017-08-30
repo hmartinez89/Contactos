@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlyContactos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hmartinez.contactos.MainActivity">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/mrgLLYContactos"
+        android:layout_marginLeft="@dimen/mrgLLYContactos"
+        android:layout_marginRight="@dimen/mrgLLYContactos">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <DatePicker
+                android:id="@+id/dpFechaDeNacimiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"
+                android:layout_marginTop="@dimen/mrgDPContactos"
+                android:headerBackground="@color/colorAccent"
+                android:layout_gravity="center_horizontal">
+            </DatePicker>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/tilTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/telefono" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/tilMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mail" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/tilDescripcionContacto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hgtILTDescripcionContacto"
+                android:hint="@string/descripcion_contacto"
+                android:gravity="start" />
+        </android.support.design.widget.TextInputLayout>
+        </android.support.design.widget.TextInputLayout>
+        </android.support.design.widget.TextInputLayout>
+
+        <EditText
+                android:id="@+id/tilNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nombre_completo" />
+        </android.support.design.widget.TextInputLayout>
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <Button
+        android:id="@+id/btnContactos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/boton_contactos"/>
+</RelativeLayout>
