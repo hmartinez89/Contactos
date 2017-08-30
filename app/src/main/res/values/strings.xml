@@ -13,4 +13,7 @@
     <string name="param_descripcion">Descripcion</string>
     <string name="btnEditarContacto">Editar Datos</string>
     <string name="tvTituloConfirmarContactos">Confirmar Datos</string>
+    <string name="tvTelefono_ConfirmarContactos">"Tel: " %1$s</string>
+    <string name="tvMail_ConfirmarContactos">"E-mail: " %1$s</string>
+    <string name="tvDescripcion_ConfirmarContactos">"Descripción: " %1$s</string>
 </resources>

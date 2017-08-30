@@ -1,11 +1,11 @@
 package com.hmartinez.contactos;
 
+import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -28,8 +28,17 @@ public class ConfirmarContactos extends AppCompatActivity {
         TextView tvDescripcion  = (TextView) findViewById(R.id.tvDescripcion_confirmarContacto);
 
         tvNombre.setText(sNombre);
-        tvTelefono.setText("Tel: " + sTelefono);
-        tvCorreo.setText("E-mail: " + sCorreo);
-        tvDescripcion.setText("Descripción: " + sDescripcion);
+        tvTelefono.setText(getResources().getString(R.string.tvTelefono_ConfirmarContactos, sTelefono));
+        tvCorreo.setText(getResources().getString(R.string.tvMail_ConfirmarContactos, sCorreo));
+        tvDescripcion.setText(getResources().getString(R.string.tvDescripcion_ConfirmarContactos, sDescripcion));
+
+        Button btnEditarContactos = (Button) findViewById(R.id.btnEditarContactos);
+        btnEditarContactos.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                ConfirmarContactos.this.finish();
+            }
+        });
     }
 }
