@@ -22,27 +22,32 @@
         android:id="@+id/tvNombre_confirmarContacto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/mrgArrConfirmarContactos" />
+        android:paddingTop="@dimen/mrgArrConfirmarContactos"
+        android:textSize="@dimen/tvNombreConfirmarContactos"/>
     <TextView
         android:id="@+id/tvFechaNacimiento_confirmarContacto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/mrgArrConfirmarContactos" />
+        android:paddingTop="@dimen/mrgArrConfirmarContactos"
+        android:textSize="@dimen/tvFechaConfirmarContactos"/>
     <TextView
         android:id="@+id/tvTelefono_confirmarContacto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/mrgArrConfirmarContactos"/>
+        android:paddingTop="@dimen/mrgArrConfirmarContactos"
+        android:textSize="@dimen/tvTelefonoConfirmarContactos"/>
     <TextView
         android:id="@+id/tvMail_confirmarContacto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/mrgArrConfirmarContactos"/>
+        android:paddingTop="@dimen/mrgArrConfirmarContactos"
+        android:textSize="@dimen/tvMailConfirmarContactos"/>
     <TextView
         android:id="@+id/tvDescripcion_confirmarContacto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/mrgArrConfirmarContactos"/>
+        android:paddingTop="@dimen/mrgArrConfirmarContactos"
+        android:textSize="@dimen/tvDescripcionConfirmarContactos"/>
     <Button
         android:id="@+id/btnEditarContactos"
         android:layout_width="wrap_content"

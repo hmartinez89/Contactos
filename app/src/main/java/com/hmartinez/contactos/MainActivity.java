@@ -1,16 +1,17 @@
 package com.hmartinez.contactos;
 
 import android.content.Intent;
-import android.support.annotation.IdRes;
-import android.support.annotation.LayoutRes;
+import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
+import android.widget.DatePicker;
+import android.widget.TextView;
+import java.text.SimpleDateFormat;
 
-import static android.R.attr.id;
+import java.util.Date;
+import java.util.GregorianCalendar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,22 +20,35 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        final TextView tvFechaNacimiento = (TextView) findViewById(R.id.tvFechaNacimientoCal);
+
         Button btnContactos = (Button) findViewById(R.id.btnContactos);
         btnContactos.setOnClickListener(new View.OnClickListener() {
 
-        EditText etNombreCompleto         = (EditText) findViewById(R.id.tilNombre);
-        EditText etTelefono               = (EditText) findViewById(R.id.tilTelefono);
-        EditText etCorreo                 = (EditText) findViewById(R.id.tilMail);
-        EditText etDescripcionContacto    = (EditText) findViewById(R.id.tilDescripcionContacto);
+        TextInputEditText tietNombreCompleto         = (TextInputEditText) findViewById(R.id.tietNombre);
+        TextInputEditText tietTelefono               = (TextInputEditText) findViewById(R.id.tietTelefono);
+        TextInputEditText tietCorreo                 = (TextInputEditText) findViewById(R.id.tietMail);
+        TextInputEditText tietDescripcionContacto    = (TextInputEditText) findViewById(R.id.tietDescripcion);
+
+        DatePicker dpFechaNacimiento = (DatePicker) findViewById(R.id.dpFechaNacimiento);
 
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, ConfirmarContactos.class);
 
-                i.putExtra(getResources().getString(R.string.param_nombre), etNombreCompleto.getText().toString());
-                i.putExtra(getResources().getString(R.string.param_telefono), etTelefono.getText().toString());
-                i.putExtra(getResources().getString(R.string.param_mail), etCorreo.getText().toString());
-                i.putExtra(getResources().getString(R.string.param_descripcion), etDescripcionContacto.getText().toString());
+                i.putExtra(getString(R.string.param_nombre), tietNombreCompleto.getText().toString());
+                i.putExtra(getString(R.string.param_telefono), tietTelefono.getText().toString());
+                i.putExtra(getString(R.string.param_mail), tietCorreo.getText().toString());
+                i.putExtra(getString(R.string.param_descripcion), tietDescripcionContacto.getText().toString());
+
+                GregorianCalendar gcFechaNacimiento =
+                new GregorianCalendar(dpFechaNacimiento.getYear(), dpFechaNacimiento.getMonth(), dpFechaNacimiento.getDayOfMonth());
+                Date dFechaNacimiento = gcFechaNacimiento.getTime();
+
+                SimpleDateFormat sdfFechaNacimiento = new SimpleDateFormat("dd-MM-yyyy");
+
+
+                i.putExtra(getString(R.string.param_fechaNacimiento), sdfFechaNacimiento.format(dFechaNacimiento));
                 startActivity(i);
             }
         });

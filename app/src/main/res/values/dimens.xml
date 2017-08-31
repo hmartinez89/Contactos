@@ -7,5 +7,10 @@
     <dimen name="mrgDerConfirmarContactos">16dp</dimen>
     <dimen name="mrgArrConfirmarContactos">16dp</dimen>
     <dimen name="mrgAbaConfirmarContactos">16dp</dimen>
-    <dimen name="tvTituloConfirmarContactos">24sp</dimen>
+    <dimen name="tvTituloConfirmarContactos">36sp</dimen>
+    <dimen name="tvNombreConfirmarContactos">24sp</dimen>
+    <dimen name="tvFechaConfirmarContactos">20sp</dimen>
+    <dimen name="tvTelefonoConfirmarContactos">20sp</dimen>
+    <dimen name="tvMailConfirmarContactos">20sp</dimen>
+    <dimen name="tvDescripcionConfirmarContactos">20sp</dimen>
 </resources>
